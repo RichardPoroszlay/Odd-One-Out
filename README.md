@@ -26,3 +26,6 @@ We are planning to create four game modes:
 ## Functional requirements
 In the main menu we can choose between different game modes.
 In each game mode the player choose between given words with their mice in the GUI window.
+
+## System License
+It's an open source project, no licence is used.
