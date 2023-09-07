@@ -34,3 +34,7 @@ It's an open source project, no licence is used.
 Nowadays the young generation have access to digital devices, thus our objective is to have this game available also digitally, not only as a card game.
 
 This provides more flexibility.
+
+## Applied business processes
+In contrast to accessable websites, our application requires no registration.
+We don't keep any of your data, so you can play safely with our game.
