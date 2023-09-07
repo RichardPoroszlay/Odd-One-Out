@@ -38,3 +38,13 @@ This provides more flexibility.
 ## Applied business processes
 In contrast to accessable websites, our application requires no registration.
 We don't keep any of your data, so you can play safely with our game.
+
+## List of Requirements
+
+| Modul   | ID   | Name       | Description |
+| ------- | ---- | ---------- | ----------- |
+| Surface | N1   | Main menu  |  The player can choose between different game modes.  |
+| Surface | N2   | Base game  | Displays the base game mode |
+| Surface | N3   | Time race  |  Displays the Time race mode |
+| Surface | N4   | Input based| Displays the Input based mode  |
+| Surface | N5   | Hardcore   |   Displays the Hardcore mode  |
