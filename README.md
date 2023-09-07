@@ -12,3 +12,13 @@ The purpose of each gamemode is different. (see Functional Specification)
 The first and most important purpose of our application is entertainment and spending valuable time. The Odd One Out games are intuitive and
 challenging. As scientific publications state, the game helps young children to improve the way of their thinking.
 The game is also good for ability testing such as linguistic and analytic skills measuring.
+
+## Developers purpose
+Our purpose is to create an open source, free application which helps the education of the young generation.
+We also want the game to be available in digital format.
+
+We are planning to create four gamemodes:
+- Base game
+- Time race
+- Input based
+- Hardcore
