@@ -29,3 +29,8 @@ In each game mode the player choose between given words with their mice in the G
 
 ## System License
 It's an open source project, no licence is used.
+
+## Why would I use this project?
+Nowadays the young generation have access to digital devices, thus our objective is to have this game available also digitally, not only as a card game.
+
+This provides more flexibility.
