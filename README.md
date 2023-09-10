@@ -74,3 +74,13 @@ The software does not handle user profiles. There is no authentication, and ther
 ## Model of required business processes
 
 The Odd One Out game is a versatile and valuable educational tool that promotes critical thinking, creativity, and cognitive skills while also making learning enjoyable. It can be employed in various contexts to engage participants, reinforce learning, and foster a deeper understanding of concepts and relationships. Whether in a classroom, a team-building session, or a family gathering, this game has enduring appeal and usefulness.
+
+## Dictionary of terms
+
+Microframework: is a term used to refer to minimalistic web application frameworks. It is contrasted with full-stack frameworks. It lacks most of the functionality which is common to expect in a full-fledged web application framework, such as: Accounts, authentication, authorization, roles.
+
+Admin: the administration of a business, organization, etc.
+
+GUI: short for graphical user interface.
+
+Frontend: relating to or denoting the part of a computer system or application with which the user interacts directly.
