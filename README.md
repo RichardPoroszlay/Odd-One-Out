@@ -55,3 +55,13 @@ We don't keep any of your data, so you can play safely with our game.
 | Surface | N3   | Time race  |  Displays the Time race mode |
 | Surface | N4   | Input based| Displays the Input based mode  |
 | Surface | N5   | Hardcore   |   Displays the Hardcore mode  |
+
+## Functional specification of requirement list
+
+| Modul   | ID   | Name       | Description |
+| ------- | ---- | ---------- | ----------- |
+| Surface | N1   | Main menu  |  The user encounters this screen when they start the program. The main function of the interface is to allow the player to navigate between game modes. A crucial requirement is a clean and clear design.  |
+| Surface | N2   | Base game  | The most basic game mode. The user is provided with word quadruples, from which they can choose which one does not belong to the group. The program provides feedback on the success of the guess. |
+| Surface | N3   | Time race  |  On the screen, the player can test their speed. The basic game loop remains, but the goal here is to provide as many correct answers as possible within a given time frame. |
+| Surface | N4   | Input based| he interface also includes an input field in this screen. The user can decide how many rounds they want to start consecutively. The goal is to make as few mistakes as possible.  |
+| Surface | N5   | Hardcore   |   Hardcore mode. The user receives tasks one after another consecutively. However, they cannot make a single mistake. If they provide a wrong answer, the game is over.  |
