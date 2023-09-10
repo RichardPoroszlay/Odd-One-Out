@@ -65,3 +65,8 @@ We don't keep any of your data, so you can play safely with our game.
 | Surface | N3   | Time race  |  On the screen, the player can test their speed. The basic game loop remains, but the goal here is to provide as many correct answers as possible within a given time frame. |
 | Surface | N4   | Input based| he interface also includes an input field in this screen. The user can decide how many rounds they want to start consecutively. The goal is to make as few mistakes as possible.  |
 | Surface | N5   | Hardcore   |   Hardcore mode. The user receives tasks one after another consecutively. However, they cannot make a single mistake. If they provide a wrong answer, the game is over.  |
+
+
+## Use cases
+
+The software does not handle user profiles. There is no authentication, and there are no user roles. As soon as the program starts, the user appears as a player. In this capacity, they have access to all of the program's game modes. They have unlimited attempts, and they can restart the game as many times as they want. However, there are no admin privileges, and users cannot modify the software's properties.
