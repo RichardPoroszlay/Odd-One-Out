@@ -75,6 +75,12 @@ The software does not handle user profiles. There is no authentication, and ther
 
 The Odd One Out game is a versatile and valuable educational tool that promotes critical thinking, creativity, and cognitive skills while also making learning enjoyable. It can be employed in various contexts to engage participants, reinforce learning, and foster a deeper understanding of concepts and relationships. Whether in a classroom, a team-building session, or a family gathering, this game has enduring appeal and usefulness.
 
+## Standard scenario
+
+- During the runtime of the software, a user appears, the player.
+- At the start, the player finds themselves in the menu, where they can choose between different game modes. (The general gameplay descriptions of the various game modes can be found under the "Functional specification of requirement list" section.)
+- After a session, the player can choose whether they'd like to start a new round or exit the current screen.
+
 ## Dictionary of terms
 
 Microframework: is a term used to refer to minimalistic web application frameworks. It is contrasted with full-stack frameworks. It lacks most of the functionality which is common to expect in a full-fledged web application framework, such as: Accounts, authentication, authorization, roles.
