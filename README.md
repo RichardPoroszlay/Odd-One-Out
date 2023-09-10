@@ -8,6 +8,13 @@ The game contains multiple game modes, so the player can choose their favourite 
 After the player has chosen their game mode, their purpose is to find the inappropriate word in the word set.
 The purpose of each game mode is different. (see Functional Specification)
 
+You play this game just for the sheer fun of it. This game provides pure enjoyment for individuals aged 2 to 99.
+Plus thanks to more game modes, you can choose what is the most suitable for you.
+The first game mode would be a base game, where you just select the Odd One Out.
+In the next game mode race against time.
+In the third game mode you decide how many rounds youu wanna play.
+The fourth game mode would be a hardcore game mode.
+
 ## Current state
 The first and most important purpose of our application is entertainment and spending valuable time. The Odd One Out games are intuitive and
 challenging. As scientific publications state, the game helps young children to improve the way of their thinking.
