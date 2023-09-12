@@ -51,6 +51,16 @@ We make this project within 3 weeks.
 Our goal is to create the application by the end of September. We want it to be presentable to public audience.
 
 
+## Model of business processes
+
+The project has basically two participants: players and developers.
+The players can access and play all the available game modes, whereas the developers can also change the sourcecode and they have access to the database.
+The players can not see the database itself nor can not change the code.
+
+We've created a diagram of this process, see it below.
+
+![model of business processes](../res/model-of-business-processes.png)
+
 ## Requirements
 
 ### Functional requirements
