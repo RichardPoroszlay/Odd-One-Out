@@ -86,26 +86,9 @@ Development tools:
 - Flask
 - MySQL
 - Visual Studio Code
+- HTML/CSS
 
 Operating System: Since our program will be hosted as a web page, the only requirement is to use a web browser with stable internet.
-
-## Database plan
-
-We have decided not to store or utilize user data within our application. Instead, our database structure is designed to store only the essential data necessary for the application's functionality.
-
-The database structure is as follows:
-- table name: Oddoneout
-- field names:
-    - id: INT
-    - word1: VARCHAR(255)
-    - word2: VARCHAR(255)
-    - word3: VARCHAR(255)
-    - word4: VARCHAR(255)
-    - solution: VARCHAR(255)
-
-In each database record, we will store four words (Word1, Word2, Word3, and Word4), and the Solution for the given set of words will be stored in the 'Solution' field.
-
-![database](../res/database.png)
 
 ## Database plan
 
@@ -166,7 +149,6 @@ Backend Service:
 ### Registration interface
 
 The program will not have a registration interface, so it cannot and will not be tested.
-
 
 ## Implementation plan
 
