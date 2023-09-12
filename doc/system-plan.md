@@ -50,7 +50,6 @@ We make this project within 3 weeks.
 
 Our goal is to create the application by the end of September. We want it to be presentable to public audience.
 
-
 ## Model of business processes
 
 The project has basically two participants: players and developers.
@@ -107,3 +106,93 @@ The database structure is as follows:
 In each database record, we will store four words (Word1, Word2, Word3, and Word4), and the Solution for the given set of words will be stored in the 'Solution' field.
 
 ![database](../res/database.png)
+
+## Database plan
+
+We have decided not to store or utilize user data within our application. Instead, our database structure is designed to store only the essential data necessary for the application's functionality.
+
+The database structure is as follows:
+- table name: Oddoneout
+- field names:
+    - id: INT
+    - word1: VARCHAR(255)
+    - word2: VARCHAR(255)
+    - word3: VARCHAR(255)
+    - word4: VARCHAR(255)
+    - solution: VARCHAR(255)
+
+In each database record, we will store four words (Word1, Word2, Word3, and Word4), and the Solution for the given set of words will be stored in the 'Solution' field.
+
+![database](../res/database.png)
+
+## Installation plan
+
+It's a web application, thus you only need to download a web browser.
+
+This web browser can be:
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Edge
+- Opera
+- Safari
+
+In order to play with the game, you need to have internet connection, because the client connects directly to the webserver via internet connection.
+
+## Test plan
+
+The purpose of testing is to fully examine and verify the functionality of the system and its components,
+as well as to verify the business services implemented by the system.
+
+### Testing Procedures
+
+Unit Test:
+Wherever possible, it is necessary to test during the development phase to ensure that the methods are functioning correctly. 
+Therefore, Unit tests should be written for each method, keeping in mind the goal of achieving maximum code coverage. 
+The methods are considered ready when the test cases run without errors on each method.
+
+Alpha Test:
+The primary goal of this test is to test the compatibility of existing features with different browsers. 
+The test is performed by the developers themselves.
+The procedure is considered successful if the various features work correctly in different browsers.
+
+### Functions to be Tested
+
+Backend Service:
+- It should be able to connect to web clients.
+- It should be capable of serving multiple clients simultaneously.
+- It should be able to upload and query data from the database.
+- It should be capable of providing all the functionalities available on all interfaces.
+
+### Registration interface
+
+The program will not have a registration interface, so it cannot and will not be tested.
+
+
+## Implementation plan
+
+### WEB
+
+HTML - serves as a fundamental language in a web project, aiding in the structuring of web content.
+It enables web developers to design the layout, style, and interactivity of web pages, thereby enhancing the user experience.
+Its defines the elements and tags used to arrange text, images, links, and multimedia on web pages.
+HTML files form the foundation of web pages, and browsers use them to display content, allowing users to access it over the internet.
+
+CSS - In a web project, CSS is responsible for controlling the visual appearance and style.
+It defines attributes like colors, fonts, sizes, and layouts for web pages.
+CSS enables web developers to create a consistent look and feel across all webpages.
+CSS facilitates improving user experience and effortlessly formatting content on webpages.
+
+### Backend
+
+Python - Python is a commonly used programming language in web projects, known for its versatility and ease of learning.
+With Python, you can develop web applications, websites, and server-side scripts.
+Popular frameworks like Flask make it easy to build web applications using Python.
+Its simplicity and versatility make Python a powerful tool for developing and maintaining web projects.
+
+Flask - Flask is a lightweight and micro web framework for building web applications in Python.
+It provides essential tools and libraries to create web-based projects quickly and efficiently.
+Flask is ideal for prototyping, building small to medium-sized web applications, and can be extended with various extensions and libraries as needed.
+
+MySQL - MySQL is an open-source relational database management system that plays a crucial role in web projects.
+It aids in efficiently storing, querying, and managing data for web applications and websites.
+MySQL offers a reliable and efficient database system, making it indispensable for modern web development.
