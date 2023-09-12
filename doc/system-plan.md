@@ -30,3 +30,21 @@ We make this project within 3 weeks.
 ### Achievements
 
 Our goal is to create the application by the end of September. We want it to be presentable to public audience.
+
+
+## Requirements
+
+### Functional requirements
+
+- operation in a web environment
+- Database management. Storing puzzles in a database.
+- Navigation between game modes
+- Base game mode
+- Time race mode
+- Input based mode
+- Hardcore mode
+
+### Non-functional requirements
+
+- Clean design
+- User-friendly software
