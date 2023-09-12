@@ -28,6 +28,19 @@ The fourth game mode would be a hardcore game mode.
 
 The software does not handle user profiles. There is no authentication, and there are no user roles. As soon as the program starts, the user appears as a player. In this capacity, they have access to all of the program's game modes. They have unlimited attempts, and they can restart the game as many times as they want. However, there are no admin privileges, and users cannot modify the software's properties.
 
+## Current model of business processes
+
+In today's digital age, the necessity of an online Odd-One-Out game has become increasingly evident. 
+Such games serve not only as a source of entertainment but also offer several valuable benefits.
+
+Additionally, in an era where remote work and virtual interactions have become the norm, online Odd-One-Out games provide a fun and engaging way to connect with friends and colleagues across distances. 
+They promote social interaction and bonding while keeping individuals mentally sharp and engaged.
+
+Moreover, these games are accessible anytime, anywhere, on various devices, making them a convenient choice for people with busy lifestyles. 
+They offer a quick mental escape from the stresses of daily life, helping to reduce anxiety and improve overall well-being.
+
+In conclusion, the online Odd-One-Out game has evolved from a simple pastime to a valuable tool for mental exercise, social connection, and relaxation in our fast-paced, interconnected world.
+
 ## Model of required business processes
 
 The Odd One Out game is a versatile and valuable educational tool that promotes critical thinking, creativity, and cognitive skills while also making learning enjoyable. It can be employed in various contexts to engage participants, reinforce learning, and foster a deeper understanding of concepts and relationships. Whether in a classroom, a team-building session, or a family gathering, this game has enduring appeal and usefulness.
