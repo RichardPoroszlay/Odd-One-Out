@@ -13,6 +13,15 @@ In the next game mode race against time.
 In the third game mode you decide how many rounds youu wanna play.
 The fourth game mode would be a hardcore game mode.
 
+## Current state
+
+The primary function of the program is entertainment. It offers a diverse range of game modes
+that assist young individuals in experiencing the "odd-one-out" phenomenon. The fundamental
+mechanics of the game are designed to enhance logical reasoning skills. With its variety,
+it provides an exciting and engaging experience that keeps players thoroughly entertained and
+less likely to grow bored. This diversity and engagement factor contribute significantly to
+the program's appeal and effectiveness in delivering enjoyable gameplay experiences.
+
 ## Functional specification of requirement list
 
 | Modul   | ID   | Name       | Description |
@@ -27,6 +36,19 @@ The fourth game mode would be a hardcore game mode.
 ## Use cases
 
 The software does not handle user profiles. There is no authentication, and there are no user roles. As soon as the program starts, the user appears as a player. In this capacity, they have access to all of the program's game modes. They have unlimited attempts, and they can restart the game as many times as they want. However, there are no admin privileges, and users cannot modify the software's properties.
+
+## Current model of business processes
+
+In today's digital age, the necessity of an online Odd-One-Out game has become increasingly evident. 
+Such games serve not only as a source of entertainment but also offer several valuable benefits.
+
+Additionally, in an era where remote work and virtual interactions have become the norm, online Odd-One-Out games provide a fun and engaging way to connect with friends and colleagues across distances. 
+They promote social interaction and bonding while keeping individuals mentally sharp and engaged.
+
+Moreover, these games are accessible anytime, anywhere, on various devices, making them a convenient choice for people with busy lifestyles. 
+They offer a quick mental escape from the stresses of daily life, helping to reduce anxiety and improve overall well-being.
+
+In conclusion, the online Odd-One-Out game has evolved from a simple pastime to a valuable tool for mental exercise, social connection, and relaxation in our fast-paced, interconnected world.
 
 ## Model of required business processes
 
