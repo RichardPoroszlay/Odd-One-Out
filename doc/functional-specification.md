@@ -13,6 +13,15 @@ In the next game mode race against time.
 In the third game mode you decide how many rounds youu wanna play.
 The fourth game mode would be a hardcore game mode.
 
+## Current state
+
+The primary function of the program is entertainment. It offers a diverse range of game modes
+that assist young individuals in experiencing the "odd-one-out" phenomenon. The fundamental
+mechanics of the game are designed to enhance logical reasoning skills. With its variety,
+it provides an exciting and engaging experience that keeps players thoroughly entertained and
+less likely to grow bored. This diversity and engagement factor contribute significantly to
+the program's appeal and effectiveness in delivering enjoyable gameplay experiences.
+
 ## Functional specification of requirement list
 
 | Modul   | ID   | Name       | Description |
