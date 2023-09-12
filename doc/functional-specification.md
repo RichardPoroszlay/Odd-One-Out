@@ -13,6 +13,15 @@ In the next game mode race against time.
 In the third game mode you decide how many rounds youu wanna play.
 The fourth game mode would be a hardcore game mode.
 
+## Current state
+
+The primary function of the program is entertainment. It offers a diverse range of game modes
+that assist young individuals in experiencing the "odd-one-out" phenomenon. The fundamental
+mechanics of the game are designed to enhance logical reasoning skills. With its variety,
+it provides an exciting and engaging experience that keeps players thoroughly entertained and
+less likely to grow bored. This diversity and engagement factor contribute significantly to
+the program's appeal and effectiveness in delivering enjoyable gameplay experiences.
+
 ## Functional specification of requirement list
 
 | Modul   | ID   | Name       | Description |
@@ -28,9 +37,36 @@ The fourth game mode would be a hardcore game mode.
 
 The software does not handle user profiles. There is no authentication, and there are no user roles. As soon as the program starts, the user appears as a player. In this capacity, they have access to all of the program's game modes. They have unlimited attempts, and they can restart the game as many times as they want. However, there are no admin privileges, and users cannot modify the software's properties.
 
+## Current model of business processes
+
+In today's digital age, the necessity of an online Odd-One-Out game has become increasingly evident. 
+Such games serve not only as a source of entertainment but also offer several valuable benefits.
+
+Additionally, in an era where remote work and virtual interactions have become the norm, online Odd-One-Out games provide a fun and engaging way to connect with friends and colleagues across distances. 
+They promote social interaction and bonding while keeping individuals mentally sharp and engaged.
+
+Moreover, these games are accessible anytime, anywhere, on various devices, making them a convenient choice for people with busy lifestyles. 
+They offer a quick mental escape from the stresses of daily life, helping to reduce anxiety and improve overall well-being.
+
+In conclusion, the online Odd-One-Out game has evolved from a simple pastime to a valuable tool for mental exercise, social connection, and relaxation in our fast-paced, interconnected world.
+
 ## Model of required business processes
 
 The Odd One Out game is a versatile and valuable educational tool that promotes critical thinking, creativity, and cognitive skills while also making learning enjoyable. It can be employed in various contexts to engage participants, reinforce learning, and foster a deeper understanding of concepts and relationships. Whether in a classroom, a team-building session, or a family gathering, this game has enduring appeal and usefulness.
+
+## Menu plans
+
+On the menu page, users have the opportunity to familiarize themselves with our website's name and make a choice regarding their preferred game mode by making a selection from one of the four available buttons.
+
+In the Base game, players can read a question, such as "which word is the wrong one", and have to choose the right one from four buttons.
+
+In the Time Race mode, players are challenged to answer as many questions correctly as they can within a one-minute time limit. Words will be presented one after another, displayed in four separate buttons.
+
+In the Input based mode, there will be a question and an input field that will indicate how many rounds of the game the player wants to play. Afterward, words will appear one after another.
+
+In the Hardcore mode, the user will receive tasks one after another consecutively. They must choose from among 4 buttons and provide the correct answer each time. A counter will keep track of their successful responses, which will be continuously displayed on the screen. If they make a single mistake, the game is over.
+
+![menu plan](../res/main-menu.png)
 
 ## Standard scenario
 
