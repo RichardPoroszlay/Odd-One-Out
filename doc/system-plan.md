@@ -89,3 +89,33 @@ Development tools:
 - Visual Studio Code
 
 Operating System: Since our program will be hosted as a web page, the only requirement is to use a web browser with stable internet.
+
+
+## Implementation plan
+
+### WEB
+
+HTML - serves as a fundamental language in a web project, aiding in the structuring of web content.
+It enables web developers to design the layout, style, and interactivity of web pages, thereby enhancing the user experience.
+Its defines the elements and tags used to arrange text, images, links, and multimedia on web pages.
+HTML files form the foundation of web pages, and browsers use them to display content, allowing users to access it over the internet.
+
+CSS - In a web project, CSS is responsible for controlling the visual appearance and style.
+It defines attributes like colors, fonts, sizes, and layouts for web pages.
+CSS enables web developers to create a consistent look and feel across all webpages.
+CSS facilitates improving user experience and effortlessly formatting content on webpages.
+
+### Backend
+
+Python - Python is a commonly used programming language in web projects, known for its versatility and ease of learning.
+With Python, you can develop web applications, websites, and server-side scripts.
+Popular frameworks like Flask make it easy to build web applications using Python.
+Its simplicity and versatility make Python a powerful tool for developing and maintaining web projects.
+
+Flask - Flask is a lightweight and micro web framework for building web applications in Python.
+It provides essential tools and libraries to create web-based projects quickly and efficiently.
+Flask is ideal for prototyping, building small to medium-sized web applications, and can be extended with various extensions and libraries as needed.
+
+MySQL - MySQL is an open-source relational database management system that plays a crucial role in web projects.
+It aids in efficiently storing, querying, and managing data for web applications and websites.
+MySQL offers a reliable and efficient database system, making it indispensable for modern web development.
