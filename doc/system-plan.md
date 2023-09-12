@@ -89,3 +89,32 @@ Development tools:
 - Visual Studio Code
 
 Operating System: Since our program will be hosted as a web page, the only requirement is to use a web browser with stable internet.
+
+## Test plan
+
+The purpose of testing is to fully examine and verify the functionality of the system and its components,
+as well as to verify the business services implemented by the system.
+
+### Testing Procedures
+
+Unit Test:
+Wherever possible, it is necessary to test during the development phase to ensure that the methods are functioning correctly. 
+Therefore, Unit tests should be written for each method, keeping in mind the goal of achieving maximum code coverage. 
+The methods are considered ready when the test cases run without errors on each method.
+
+Alpha Test:
+The primary goal of this test is to test the compatibility of existing features with different browsers. 
+The test is performed by the developers themselves.
+The procedure is considered successful if the various features work correctly in different browsers.
+
+### Functions to be Tested
+
+Backend Service:
+- It should be able to connect to web clients.
+- It should be capable of serving multiple clients simultaneously.
+- It should be able to upload and query data from the database.
+- It should be capable of providing all the functionalities available on all interfaces.
+
+### Registration interface
+
+The program will not have a registration interface, so it cannot and will not be tested.
