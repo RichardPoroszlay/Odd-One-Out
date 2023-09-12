@@ -64,7 +64,9 @@ In the Time Race mode, players are challenged to answer as many questions correc
 
 In the Input based mode, there will be a question and an input field that will indicate how many rounds of the game the player wants to play. Afterward, words will appear one after another.
 
-In the Hardcore mode, the user will receive tasks one after another consecutively. They must choose from among 4 buttons and provide the correct answer each time. A counter will keep track of their successful responses, which will be continuously displayed on the screen. If they make a single mistake, the game is over
+In the Hardcore mode, the user will receive tasks one after another consecutively. They must choose from among 4 buttons and provide the correct answer each time. A counter will keep track of their successful responses, which will be continuously displayed on the screen. If they make a single mistake, the game is over.
+
+![menu plan](../res/main-menu.png)
 
 ## Standard scenario
 
