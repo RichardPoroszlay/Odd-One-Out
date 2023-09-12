@@ -30,3 +30,15 @@ We make this project within 3 weeks.
 ### Achievements
 
 Our goal is to create the application by the end of September. We want it to be presentable to public audience.
+
+## Physical environment
+
+Development Platform: Our program will be implemented in Python using the Flask web framework. Furthermore we will use MySQL database to store the data.
+
+Development tools:
+- Python
+- Flask
+- MySQL
+- Visual Studio Code
+
+Operating System: Since our program will be hosted as a web page, the only requirement is to use a web browser with stable internet.
