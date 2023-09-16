@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.title-section {
+    background-color: #d4d0d0;
+    padding: none 10px 10px 10px;
+    letter-spacing: 1px;
+}
+
+.title {
+    font-size: 75px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contents-section {
+    background-color: black;
+    text-align: center;
+    min-height: 90.9%;
+}
+
+.contents-section button {
+    background-color: white;
+    font-size: 30px;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 25px;
+    min-height: 80px; 
+    min-width: 200px;
+    margin: 40px;
+    transition: color 0.5s, background-color 0.5s, box-shadow 0.2s;   
+}
+
+.base-game button:hover {
+    background: radial-gradient(53.2% 178.72% at 27.1% 182.75%,#c241ff 6.65%,#6b57ff 100%);
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #c241ff;
+    cursor: pointer;
+}
+
+.time-race button:hover {
+    background: radial-gradient(53.2% 178.72% at 27.1% 182.75%,#29f039 6.65%,#32a4d8 100%);
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #29f039 ;
+    cursor: pointer;
+}
+
+.input-based button:hover {
+    background: radial-gradient(53.2% 178.72% at 27.1% 182.75%,#fceb05 6.65%,#e98604 100%);
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #fceb05;
+    cursor: pointer;
+}
+
+.hardcore button:hover {
+    background: radial-gradient(53.2% 178.72% at 27.1% 182.75%,#ffffff 6.65%,#fa0000 100%);
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #ffffff;
+    cursor: pointer;
+}
+
+.quit button:hover {
+    background: radial-gradient(53.2% 178.72% at 27.1% 182.75%,#f18508 6.65%,#2106e9 100%);
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #f18508;
+    cursor: pointer;
+}
