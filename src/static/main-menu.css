@@ -22,7 +22,7 @@ html, body {
 }
 
 .contents-section {
-    background-color: black;
+    background-color: rgb(33, 33, 33) ;
     text-align: center;
     min-height: 90.9%;
 }
