@@ -23,11 +23,17 @@ def index():
 
 @app.route("/base")
 def base():
-	return render_template("base.html", word= db_conn.get_random_record())
+	word = db_conn.get_random_record()
+	get_solution(word)
+
+	return render_template("base.html", word=word)
 
 @app.route("/base/<id>")
 def show_word(id):
-	return render_template("main-menu.html")
+	if id == solution:
+		return "You have won"
+	else:
+		return "You have lost"
 
 @app.route("/time")
 def time():
