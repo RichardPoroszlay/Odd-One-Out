@@ -17,7 +17,7 @@ def index():
 
 @app.route("/base")
 def base():
-	return render_template("base.html", word= db_conn.get_random_word())
+	return render_template("base.html", word= db_conn.get_random_record())
 
 @app.route("/time")
 def time():
