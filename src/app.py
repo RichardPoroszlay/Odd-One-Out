@@ -25,15 +25,14 @@ def index():
 def base():
 	word = db_conn.get_random_record()
 	get_solution(word)
-
 	return render_template("base.html", word=word)
 
 @app.route("/base/<id>")
 def show_word(id):
 	if id == solution:
-		return "You have won"
+		return render_template("won.html")
 	else:
-		return "You have lost"
+		return render_template("lost.html")
 
 @app.route("/time")
 def time():
