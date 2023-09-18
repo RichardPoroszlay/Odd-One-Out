@@ -28,6 +28,23 @@ In each game mode the player choose between given words with their mice in the G
 ## System License
 It's an open source project, no licence is used.
 
+## Legal requirements that apply to the system
+Copyright and Intellectual Property:
+- Ensure that the game's content, including graphics, sound, and text, does not infringe upon the copyrights or intellectual property rights of others.
+- If you use any third-party assets or open-source libraries, be sure to adhere to their licensing terms and give proper attribution when required.
+  
+Accessibility:
+- Ensure that your game is accessible to players with disabilities by adhering to accessibility guidelines and laws
+  
+Trademarks and Branding:
+- Be cautious about using trademarks, logos, or branding elements of other companies or products without proper authorization, as this can lead to legal issues.
+  
+Contractual Agreements:
+- If you work with collaborators, artists, or developers, create clear contracts outlining ownership, royalties, and other rights and responsibilities to prevent disputes down the line.
+
+Fair Competition:
+- Avoid unfair competition practices, such as false advertising, that could lead to legal action from competitors.
+
 ## Why would I use this project?
 Nowadays the young generation have access to digital devices, thus our objective is to have this game available also digitally, not only as a card game.
 
