@@ -8,7 +8,13 @@ app.config['MYSQL_HOST'] = 'sql11.freemysqlhosting.net'
 app.config['MYSQL_USER'] = 'sql11646848'
 app.config['MYSQL_PASSWORD'] = 'h27FqgTnlq'
 app.config['MYSQL_DB'] = 'sql11646848'
-db_conn = DbConnections(app) 
+db_conn = DbConnections(app)
+
+solution = None
+
+def get_solution(words):
+	global solution
+	solution = words[-1]
 
 @app.route('/')
 def index():
