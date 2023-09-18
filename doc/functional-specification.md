@@ -37,6 +37,10 @@ the program's appeal and effectiveness in delivering enjoyable gameplay experien
 
 The software does not handle user profiles. There is no authentication, and there are no user roles. As soon as the program starts, the user appears as a player. In this capacity, they have access to all of the program's game modes. They have unlimited attempts, and they can restart the game as many times as they want. However, there are no admin privileges, and users cannot modify the software's properties.
 
+### Maintenance
+
+The continuous operation and maintenance of the application include addressing program errors, making modifications due to changes in internal requirements, and addressing program or file modification needs arising from changes in environmental conditions. Over time, new categories must be added to the game to maintain interest.
+
 ## Current model of business processes
 
 In today's digital age, the necessity of an online Odd-One-Out game has become increasingly evident. 
