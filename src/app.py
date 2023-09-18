@@ -19,6 +19,10 @@ def index():
 def base():
 	return render_template("base.html", word= db_conn.get_random_record())
 
+@app.route("/base/<id>")
+def show_word(id):
+	return render_template("main-menu.html")
+
 @app.route("/time")
 def time():
 	return render_template("time.html")
