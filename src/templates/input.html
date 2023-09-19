@@ -15,10 +15,13 @@
         </div>
     </div>
 
-    <form action="TODO">
-        <label for="rounds">How many rounds would you like to play?</label><br>
-        <input type="number" id="rounds" name="rounds">
-    </form>
+    <div class="question">
+        <form action="/process_input" method="POST">
+            <label for="rounds">How many rounds would you like to play?</label><br>
+            <input type="number" id="rounds" name="rounds">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 
 </html>
