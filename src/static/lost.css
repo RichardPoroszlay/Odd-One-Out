@@ -7,27 +7,17 @@
 html, body {
     height: 100%;
     margin: 0;
+    background: #DC143C;
 }
 
-.contents-section{
+.section {
     display: flex;
-    justify-content: center; /* A gombokat középre igazítja a vízszintes tengelyen */
-    align-items: center; /* A gombokat középre igazítja a függőleges tengelyen */
-    height: 100vh; /* Teljes képernyős magasság beállítása */
-}
-
-
-
-.title-section {
-    background-color: #6b57ff;
-    padding: none 10px 10px 10px;
-    letter-spacing: 1px;
-}
-
-.title {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     font-size: 75px;
     font-weight: bold;
-    text-align: center;
 }
 
 button {
@@ -49,4 +39,3 @@ button:hover {
     box-shadow: 0 0.5em 0.5em -0.4em #c241ff;
     cursor: pointer;
 }
-
