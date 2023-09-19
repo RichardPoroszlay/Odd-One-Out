@@ -1,14 +1,26 @@
-<div class="contents-section">
-    <div class="button">
-        <button><a href="/base/{{word[1]}}"> {{ word[1] }}</a></button>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd One Out - Main Menu</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='base.css')}}">
+</head>
+
+<body>
+    <div class="title-section">
+        <div class="title">
+            Can you find the odd one out?
+        </div>
     </div>
-    <div class="button">
-        <button><a href="/base/{{word[2]}}"> {{ word[2] }}</a></button>
+
+    <div class="contents-section">
+        <a href="/base/{{word[1]}}"><button>{{ word[1] }}</button></a>
+        <a href="/base/{{word[2]}}"><button>{{ word[2] }}</button></a>
+        <a href="/base/{{word[3]}}"><button>{{ word[3] }}</button></a>
+        <a href="/base/{{word[4]}}"><button>{{ word[4] }}</button></a>
     </div>
-    <div class="button">
-        <button><a href="/base/{{word[3]}}"> {{ word[3] }}</a></button>
-    </div>
-    <div class="button">
-        <button><a href="/base/{{word[4]}}"> {{ word[4] }}</a></button>
-    </div>
-</div>
+</body>
+
+</html>
