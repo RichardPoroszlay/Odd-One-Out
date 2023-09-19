@@ -4,13 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odd One Out - Input</title>
+    <title>Odd One Out - Input Game Result</title>
     <link rel="stylesheet" href="{{url_for('static',filename='input_game_result.css')}}">
 </head>
 
 <body>
-    <div class="title-section">
-        <div class="title">
-            Odd one out
-        </div>
+    <div class="section">
+        <h1>Your result:</h1>
+        <span>You won {{rounds_won}} time(s), and lost {{rounds_lost}} time(s) </span>
+        <a href="/"><button>Return to Main Menu</button></a>
     </div>
+</body>
+
+</html>
