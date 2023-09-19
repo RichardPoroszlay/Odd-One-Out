@@ -13,6 +13,8 @@ app.config['MYSQL_DB'] = 'sql11646848'
 db_conn = DbConnections(app)
 
 rounds_to_play = 0
+rounds_won = 0
+rounds_lost = 0
 solution = None
 
 def get_solution(words):
@@ -45,16 +47,25 @@ def time():
 def input():
 	return render_template("input.html")
 
-@app.route('/input_game', methods=['POST'])
+@app.route('/input_game', methods=['GET', 'POST'])
 def input_game():
     global rounds_to_play  
-    rounds = int(request.form.get('rounds'))
 
-    rounds_to_play = rounds
-    
-    return redirect(url_for('play_game'))
+    if request.method == 'POST':
+        rounds = int(request.form.get('rounds'))
+        rounds_to_play = rounds
+        word = db_conn.get_random_record()
+        get_solution(word)
+        return render_template('input_game.html', word=word)
 
-@app.route('/play_game')
+    while rounds_to_play-1 > 0:
+        word = db_conn.get_random_record()
+        get_solution(word)
+        rounds_to_play -= 1
+        return render_template('input_game.html', word=word)
+    return redirect(url_for('game_result'))
+
+"""@app.route('/play_game')
 def play_game():
     global rounds_to_play  
 
@@ -63,12 +74,30 @@ def play_game():
         rounds_to_play -= 1
 
         word = db_conn.get_random_record()
+        get_solution(word)
         
         current_round = rounds_to_play + 1
         
         return render_template('input_game.html', current_round=current_round, word=word)
     
-    return render_template('thank_you.html')
+    return redirect(url_for('game_result'))"""
+
+@app.route('/store_result', methods=['POST'])
+def store_result():
+	result = request.form.get('result')
+	global rounds_lost
+	global rounds_won
+
+	if result == solution:
+		rounds_won += 1
+	else:
+		rounds_lost += 1
+
+	#return redirect(url_for('play_game'))
+
+@app.route('/game_result')
+def game_result():
+    return render_template('input_game_result.html')
 
 @app.route("/hardcore")
 def hardcore():

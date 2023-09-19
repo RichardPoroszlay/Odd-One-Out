@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.title-section {
+    background-color: #e98604;
+    padding: none 10px 10px 10px;
+    letter-spacing: 1px;
+}
+
+.title {
+    font-size: 75px;
+    font-weight: bold;
+    text-align: center;
+}
