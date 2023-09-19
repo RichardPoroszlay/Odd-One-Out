@@ -56,28 +56,28 @@ def input_game():
         word = db_conn.get_random_record()
         get_solution(word)
         return render_template('input_game.html', word=word)
-
-    while rounds_to_play-1 > 0:
+    elif rounds_to_play-1 > 0:
+        rounds_to_play -= 1
         word = db_conn.get_random_record()
         get_solution(word)
-        rounds_to_play -= 1
         return render_template('input_game.html', word=word)
     return redirect(url_for('game_result'))
 
-@app.route('/store_result', methods=['POST'])
-def store_result():
-	result = request.form.get('result')
+@app.route('/input_game/<id>')
+def store_result(id):
 	global rounds_lost
 	global rounds_won
 
-	if result == solution:
+	if id == solution:
 		rounds_won += 1
+		return redirect(url_for('input_game'))
 	else:
 		rounds_lost += 1
+		return redirect(url_for('input_game'))
 
 @app.route('/game_result')
 def game_result():
-    return render_template('input_game_result.html')
+    return render_template('input_game_result.html', rounds_won=rounds_won, rounds_lost=rounds_lost)
 
 @app.route("/hardcore")
 def hardcore():

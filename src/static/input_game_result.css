@@ -7,16 +7,36 @@
 html, body {
     height: 100%;
     margin: 0;
+    background-color: black;
 }
 
-.title-section {
-    background-color: #e98604;
-    padding: none 10px 10px 10px;
-    letter-spacing: 1px;
-}
-
-.title {
-    font-size: 75px;
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 60px;
     font-weight: bold;
-    text-align: center;
+    color: white;
+}
+
+button {
+    background-color: #e98604;
+    font-size: 30px;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 25px;
+    min-height: 70px; 
+    min-width: 180px;
+    margin: 40px;
+    transition: color 0.5s, background-color 0.5s, box-shadow 0.2s;
+
+}
+
+button:hover {
+    background: radial-gradient(53.2% 178.72% at 27.1% 182.75%,#e98604 6.65%,#fceb05 100%);
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #c241ff;
+    cursor: pointer;
 }
