@@ -1,4 +1,6 @@
-from flask import Flask, render_template
+from flask import Flask, redirect, render_template, session, url_for
+from flask import jsonify
+from flask import request
 from db_functions import *
 
 app = Flask(__name__)
@@ -10,6 +12,7 @@ app.config['MYSQL_PASSWORD'] = 'h27FqgTnlq'
 app.config['MYSQL_DB'] = 'sql11646848'
 db_conn = DbConnections(app)
 
+rounds_to_play = 0
 solution = None
 
 def get_solution(words):
@@ -41,6 +44,31 @@ def time():
 @app.route("/input")
 def input():
 	return render_template("input.html")
+
+@app.route('/input_game', methods=['POST'])
+def input_game():
+    global rounds_to_play  
+    rounds = int(request.form.get('rounds'))
+
+    rounds_to_play = rounds
+    
+    return redirect(url_for('play_game'))
+
+@app.route('/play_game')
+def play_game():
+    global rounds_to_play  
+
+    if rounds_to_play > 0:
+        
+        rounds_to_play -= 1
+
+        word = db_conn.get_random_record()
+        
+        current_round = rounds_to_play + 1
+        
+        return render_template('input_game.html', current_round=current_round, word=word)
+    
+    return render_template('thank_you.html')
 
 @app.route("/hardcore")
 def hardcore():
