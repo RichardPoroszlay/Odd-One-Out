@@ -7,6 +7,7 @@
 html, body {
     height: 100%;
     margin: 0;
+    background-color: black;
 }
 
 .title-section {
@@ -28,12 +29,13 @@ html, body {
     align-items: center;
     text-align: center; 
     height: 100vh; 
+    color: white;
 }
 
 form label {
     font-weight: bold;
     font-size: 50px;
-    color: black;
+    color: white;
 }
 
 input[type="number"] {
