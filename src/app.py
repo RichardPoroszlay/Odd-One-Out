@@ -1,5 +1,4 @@
-from flask import Flask, redirect, render_template, session, url_for
-from flask import jsonify
+from flask import Flask, redirect, render_template, url_for
 from flask import request
 from db_functions import *
 
@@ -65,23 +64,6 @@ def input_game():
         return render_template('input_game.html', word=word)
     return redirect(url_for('game_result'))
 
-"""@app.route('/play_game')
-def play_game():
-    global rounds_to_play  
-
-    if rounds_to_play > 0:
-        
-        rounds_to_play -= 1
-
-        word = db_conn.get_random_record()
-        get_solution(word)
-        
-        current_round = rounds_to_play + 1
-        
-        return render_template('input_game.html', current_round=current_round, word=word)
-    
-    return redirect(url_for('game_result'))"""
-
 @app.route('/store_result', methods=['POST'])
 def store_result():
 	result = request.form.get('result')
@@ -92,8 +74,6 @@ def store_result():
 		rounds_won += 1
 	else:
 		rounds_lost += 1
-
-	#return redirect(url_for('play_game'))
 
 @app.route('/game_result')
 def game_result():
