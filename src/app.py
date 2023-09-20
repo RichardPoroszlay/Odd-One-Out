@@ -52,6 +52,8 @@ def input_game():
 
     if request.method == 'POST':
         rounds = int(request.form.get('rounds'))
+        if rounds < 1:
+            return render_template('lost.html')
         rounds_to_play = rounds
         word = db_conn.get_random_record()
         get_solution(word)
