@@ -15,6 +15,10 @@ The fourth game mode would be a hardcore game mode.
 
 ## Current state
 
+The first and most important purpose of our application is entertainment and spending valuable time. The Odd One Out games are intuitive and
+challenging. As scientific publications state, the game helps young children to improve the way of their thinking.
+The game is also good for ability testing such as linguistic and analytic skills measuring.
+
 The primary function of the program is entertainment. It offers a diverse range of game modes
 that assist young individuals in experiencing the "odd-one-out" phenomenon. The fundamental
 mechanics of the game are designed to enhance logical reasoning skills. With its variety,
