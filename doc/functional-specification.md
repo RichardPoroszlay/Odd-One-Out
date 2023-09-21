@@ -105,6 +105,23 @@ Overall, this Odd One Out game provides fun and mental stimulation for a wide ra
 ## System License
 It's an open source project, no licence is used.
 
+## Legal requirements that apply to the system
+Copyright and Intellectual Property:
+- Ensure that the game's content, including graphics, sound, and text, does not infringe upon the copyrights or intellectual property rights of others.
+- If you use any third-party assets or open-source libraries, be sure to adhere to their licensing terms and give proper attribution when required.
+  
+Accessibility:
+- Ensure that your game is accessible to players with disabilities by adhering to accessibility guidelines and laws
+  
+Trademarks and Branding:
+- Be cautious about using trademarks, logos, or branding elements of other companies or products without proper authorization, as this can lead to legal issues.
+  
+Contractual Agreements:
+- If you work with collaborators, artists, or developers, create clear contracts outlining ownership, royalties, and other rights and responsibilities to prevent disputes down the line.
+
+Fair Competition:
+- Avoid unfair competition practices, such as false advertising, that could lead to legal action from competitors.
+
 ## Dictionary of terms
 
 Microframework: is a term used to refer to minimalistic web application frameworks. It is contrasted with full-stack frameworks. It lacks most of the functionality which is common to expect in a full-fledged web application framework, such as: Accounts, authentication, authorization, roles.
