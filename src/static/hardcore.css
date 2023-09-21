@@ -11,6 +11,10 @@ html, body {
     color: azure;
 }
 
+.score{
+    color: #9e1e1e;
+}
+
 .contents-section{
     display: flex;
     justify-content: center; /* A gombokat középre igazítja a vízszintes tengelyen */

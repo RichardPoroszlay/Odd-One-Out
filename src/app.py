@@ -81,22 +81,24 @@ def store_result(id):
 def game_result():
     return render_template('input_game_result.html', rounds_won=rounds_won, rounds_lost=rounds_lost)
 
+hc_score = 0
+
 @app.route("/hardcore")
 def hardcore():
 	word = db_conn.get_random_record()
+	global hc_score
 	get_solution(word)
 	return render_template("hardcore.html", word=word)
 
-hc_score = 0
-
 @app.route("/hardcore/<id>")
 def show(id):
+	score = hc_score
 	if id == solution:
+		score += 1
 		return render_template("hardcore.html", word = db_conn.get_random_record())
-		hc_score = hc_score+1
 	else:
+		score = 0
 		return render_template("hc_lost.html")
-		hc_score = 0
 
 
 if __name__ == "__main__":
