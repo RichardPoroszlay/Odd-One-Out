@@ -16,6 +16,9 @@ rounds_won = 0
 rounds_lost = 0
 solution = None
 
+hc_score = 0
+
+
 def get_solution(words):
 	global solution
 	solution = words[-1]
@@ -81,25 +84,23 @@ def store_result(id):
 def game_result():
     return render_template('input_game_result.html', rounds_won=rounds_won, rounds_lost=rounds_lost)
 
-hc_score = 0
-
 @app.route("/hardcore")
 def hardcore():
-	word = db_conn.get_random_record()
 	global hc_score
+	word = db_conn.get_random_record()
 	get_solution(word)
-	return render_template("hardcore.html", word=word)
+	return render_template("hardcore.html", word=word, hc_score = hc_score)
 
 @app.route("/hardcore/<id>")
-def show(id):
-	score = hc_score
+def show_next(id):
+	global hc_score
 	if id == solution:
-		score += 1
-		return render_template("hardcore.html", word = db_conn.get_random_record())
+		hc_score += 1
+		print(hc_score)
+		return render_template("hardcore.html", word = db_conn.get_random_record(), hc_score=hc_score)
 	else:
-		score = 0
+		hc_score = 0
 		return render_template("hc_lost.html")
-
 
 if __name__ == "__main__":
     app.run(debug=True)
