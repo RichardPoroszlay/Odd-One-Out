@@ -87,6 +87,15 @@ def hardcore():
 	get_solution(word)
 	return render_template("hardcore.html", word=word)
 
+hc_score = 0
+
+@app.route("/hardcore/<id>")
+def show(id):
+	if id == solution:
+		return render_template("hardcore.html", word = db_conn.get_random_record())
+		hc_score = hc_score+1
+	else:
+		return render_template("hc_lost.html")
 
 
 if __name__ == "__main__":
