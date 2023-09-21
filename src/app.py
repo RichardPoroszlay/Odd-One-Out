@@ -83,7 +83,11 @@ def game_result():
 
 @app.route("/hardcore")
 def hardcore():
-	return render_template("hardcore.html")
+	word = db_conn.get_random_record()
+	get_solution(word)
+	return render_template("hardcore.html", word=word)
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)
