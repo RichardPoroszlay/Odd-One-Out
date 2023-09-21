@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: rgb(34, 61, 61);
+    color: azure;
+}
+
+.contents-section{
+    display: flex;
+    justify-content: center; /* A gombokat középre igazítja a vízszintes tengelyen */
+    align-items: center; /* A gombokat középre igazítja a függőleges tengelyen */
+    height: 100vh; /* Teljes képernyős magasság beállítása */
+}
+
+
+
+.title-section {
+    background-color: none;
+    padding: none 10px 10px 10px;
+    letter-spacing: 1px;
+}
+
+.title {
+    font-size: 75px;
+    font-weight: bold;
+    text-align: center;
+}
+
+button {
+    background-color: #6f6e78;
+    font-size: 30px;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 25px;
+    min-height: 80px; 
+    min-width: 200px;
+    margin: 40px;
+    transition: color 0.5s, background-color 0.5s, box-shadow 0.2s;
+
+}
+
+button:hover {
+    background: radial-gradient(53.2% 178.72% at 27.1% 182.75%,#e2d8d8 6.65%,#9e1e1e 100%);
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #b9aeae;
+    cursor: pointer;
+}
+
