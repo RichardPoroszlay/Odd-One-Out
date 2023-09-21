@@ -26,6 +26,16 @@ it provides an exciting and engaging experience that keeps players thoroughly en
 less likely to grow bored. This diversity and engagement factor contribute significantly to
 the program's appeal and effectiveness in delivering enjoyable gameplay experiences.
 
+## Developers purpose
+Our purpose is to create an open source, free application which helps the education of the young generation.
+We also want the game to be available in digital format.
+
+We are planning to create four game modes:
+- Base game
+- Time race
+- Input based
+- Hardcore
+
 ## Functional specification of requirement list
 
 | Modul   | ID   | Name       | Description |
