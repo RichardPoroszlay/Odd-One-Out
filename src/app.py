@@ -96,6 +96,7 @@ def show(id):
 		hc_score = hc_score+1
 	else:
 		return render_template("hc_lost.html")
+		hc_score = 0
 
 
 if __name__ == "__main__":
