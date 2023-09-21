@@ -72,6 +72,10 @@ In the Hardcore mode, the user will receive tasks one after another consecutivel
 
 ![menu plan](../res/main-menu.png)
 
+## Easy to read description
+
+The game is built using Python and Flask for the backend, and HTML and CSS for the frontend. It offers multiple game modes to cater to different preferences and age groups. Players must find the odd word in a set of words based on the chosen game mode, and each mode has a unique objective. There are no user profiles or authentication, and users can freely play and restart the game. The software's maintenance involves fixing errors, adapting to changing requirements, and adding new categories to keep it engaging. In today's digital age, such games serve as a source of entertainment, a tool for mental exercise, and a way to connect with others. The project's main menu allows users to select their preferred game mode, and each mode has its own rules and challenges. Overall, this Odd One Out game provides fun and mental stimulation for a wide range of players.
+
 ## Standard scenario
 
 - During the runtime of the software, a user appears, the player.
