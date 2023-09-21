@@ -102,6 +102,9 @@ Overall, this Odd One Out game provides fun and mental stimulation for a wide ra
 - At the start, the player finds themselves in the menu, where they can choose between different game modes. (The general gameplay descriptions of the various game modes can be found under the "Functional specification of requirement list" section.)
 - After a session, the player can choose whether they'd like to start a new round or exit the current screen.
 
+## System License
+It's an open source project, no licence is used.
+
 ## Dictionary of terms
 
 Microframework: is a term used to refer to minimalistic web application frameworks. It is contrasted with full-stack frameworks. It lacks most of the functionality which is common to expect in a full-fledged web application framework, such as: Accounts, authentication, authorization, roles.
