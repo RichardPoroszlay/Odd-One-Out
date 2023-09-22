@@ -99,8 +99,8 @@ def show_next(id):
 		print(hc_score)
 		return render_template("hardcore.html", word = db_conn.get_random_record(), hc_score=hc_score)
 	else:
-		hc_score = 0
-		return render_template("hc_lost.html")
+		print(hc_score)
+		return render_template("hc_lost.html", hc_score =hc_score)
 
 if __name__ == "__main__":
     app.run(debug=True)
