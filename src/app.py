@@ -100,7 +100,9 @@ def show_next(id):
 		return render_template("hardcore.html", word = db_conn.get_random_record(), hc_score=hc_score)
 	else:
 		print(hc_score)
-		return render_template("hc_lost.html", hc_score =hc_score)
+		temp_score = hc_score
+		hc_score = 0
+		return render_template("hc_lost.html", hc_score =temp_score)
 
 if __name__ == "__main__":
     app.run(debug=True)
