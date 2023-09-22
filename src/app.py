@@ -44,9 +44,9 @@ def show_word(id):
         return render_template("lost.html")
 
 
-@app.route("/time")
+@app.route("/time-race")
 def time():
-    return render_template("time.html")
+    return render_template("time-race.html")
 
 
 @app.route("/input")
