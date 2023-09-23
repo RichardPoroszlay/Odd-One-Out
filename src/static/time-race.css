@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.title-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: none 10px 10px 10px;
+    letter-spacing: 1px;
+    background: radial-gradient(53.2% 178.72% at 27.1% 182.75%,#29f039 6.65%,#32a4d8 100%);
+}
+
+.title {
+    font-size: 75px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contents-section {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    background-color: black;
+    min-height: 91%;
+}
+
+.contents-section .navbar {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: bold;
+    padding: 25px;
+    gap: 20px;
+}
+
+.contents-section .navbar #score {
+    font-size: 60px;
+}
+
+.contents-section .navbar #timer {
+    font-size: 50px;
+}
+
+.contents-section .buttons {
+    display: flex;
+}
+
+.contents-section .buttons button {
+    background-color: white;
+    font-size: 30px;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 25px;
+    min-height: 80px; 
+    min-width: 400px;
+    margin: 40px;
+    transition: color 0.5s, background-color 0.5s, box-shadow 0.2s;   
+}
+
+button:hover {
+    background: radial-gradient(53.2% 178.72% at 27.1% 182.75%,#29f039 6.65%,#32a4d8 100%);
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #29f039;
+    cursor: pointer;
+}
