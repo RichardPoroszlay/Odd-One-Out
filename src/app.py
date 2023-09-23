@@ -18,6 +18,8 @@ solution = None
 
 hc_score = 0
 
+tr_score = 0
+
 
 def get_solution(words):
     global solution
@@ -26,6 +28,8 @@ def get_solution(words):
 
 @app.route("/")
 def index():
+    global tr_score
+    tr_score = 0
     return render_template("main-menu.html")
 
 
@@ -45,8 +49,29 @@ def show_word(id):
 
 
 @app.route("/time-race")
-def time():
-    return render_template("time-race.html")
+def time_race():
+    global tr_score
+    word = db_conn.get_random_record()
+    get_solution(word)
+    return render_template("time-race.html", word=word, tr_score=tr_score)
+
+
+@app.route("/time-race/<id>")
+def show_next_tr(id):
+    global tr_score
+    if id == solution:
+        tr_score += 1
+        return redirect(url_for("time_race"))
+    else:
+        return redirect(url_for("time_race"))
+
+
+@app.route("/tr-timeout")
+def show_tr_lost():
+    global tr_score
+    temp_score = tr_score
+    tr_score = 0
+    return render_template("tr-timeout.html", tr_score=temp_score)
 
 
 @app.route("/input")
