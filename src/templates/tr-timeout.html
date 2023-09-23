@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd One Out - Time Race Timeout</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='tr-timeout.css')}}">
+</head>
+<body>
+    <div class="section">
+        <span id="lost">You are out of time!</span>
+        <span id="score">Score: {{ tr_score }}</span>
+        <div class="buttons">
+            <a href="/time-race"><button>Try again</button></a>
+            <a href="/"><button>Return to Main Menu</button></a>
+        </div>
+    </div>
+</body>
+</html>
