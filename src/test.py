@@ -77,6 +77,22 @@ class TestAppRoutes(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.log_test_passed("test_game_result_route")
 
+    def test_store_result_route_correct_solution(self):
+        self.log_test_start("test_store_result_route_correct_solution")
+        response = self.app.get('/input_game/your_solution_id')
+        self.assertEqual(response.status_code, 302)
+        response = self.app.get('/input_game')
+        self.assertEqual(response.status_code, 200)
+        self.log_test_passed("test_store_result_route_correct_solution")
+
+    def test_store_result_route_incorrect_solution(self):
+        self.log_test_start("test_store_result_route_incorrect_solution")
+        response = self.app.get('/input_game/incorrect_solution_id')
+        self.assertEqual(response.status_code, 302)
+        response = self.app.get('/input_game')
+        self.assertEqual(response.status_code, 200)
+        self.log_test_passed("test_store_result_route_incorrect_solution")
+
 if __name__ == '__main__':
     clear_log_file()
     unittest.main()
