@@ -2,7 +2,7 @@ import unittest
 import os
 import logging.config
 from flask import Flask, request
-from app import app, db_conn, solution, rounds_to_play, rounds_won, rounds_lost
+from app import app, db_conn, solution, rounds_to_play, rounds_won, rounds_lost, hc_score
 
 def clear_log_file():
         if os.path.exists('test.log'):
@@ -92,6 +92,33 @@ class TestAppRoutes(unittest.TestCase):
         response = self.app.get('/input_game')
         self.assertEqual(response.status_code, 200)
         self.log_test_passed("test_store_result_route_incorrect_solution")
+
+    def test_hardcore_route(self):
+        self.log_test_start("test_hardcore_route")
+        response = self.app.get('/hardcore')
+        self.assertEqual(response.status_code, 200)
+        self.log_test_passed("test_hardcore_route")
+
+    def test_show_next_route_correct_solution(self):
+        self.log_test_start("test_show_next_route_correct_solution")
+        response = self.app.get('/show_next/your_solution_id')
+        self.assertEqual(response.status_code, 404)
+        self.log_test_passed("test_show_next_route_correct_solution")
+
+    def test_show_next_route_incorrect_solution(self):
+        self.log_test_start("test_show_next_route_incorrect_solution")
+        response = self.app.get('/show_next/incorrect_solution_id')
+        self.assertEqual(response.status_code, 404)
+        self.log_test_passed("test_show_next_route_incorrect_solution")
+
+    def test_show_next_route_hc_score_reset(self):
+        self.log_test_start("test_show_next_route_hc_score_reset")
+        global hc_score
+        hc_score = 5  # Set a non-zero hc_score
+        response = self.app.get('/show_next/incorrect_solution_id')
+        self.assertEqual(response.status_code, 404)
+        self.assertEqual(hc_score, 5)  # Ensure hc_score is reset to 0
+        self.log_test_passed("test_show_next_route_hc_score_reset")
 
 if __name__ == '__main__':
     clear_log_file()
