@@ -37,6 +37,6 @@ button {
 button:hover {
     background: radial-gradient(53.2% 178.72% at 27.1% 182.75%,#e98604 6.65%,#fceb05 100%);
     color: white;
-    box-shadow: 0 0.5em 0.5em -0.4em #c241ff;
+    box-shadow: 0 0.5em 0.5em -0.4em #e98604 ;
     cursor: pointer;
 }
