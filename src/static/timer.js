@@ -3,7 +3,7 @@ const COUNTER_KEY = 'my-counter';
 function countDown(i, callback) {
     //callback = callback || function(){};
     timer = setInterval(function() {
-      seconds = parseInt(i % 15, 10);
+      seconds = parseInt(i % 16, 10); // here we give 16 as the parameter, so the timer will start from 15
       seconds = seconds < 10 ? "0" + seconds : seconds;
 
       document.getElementById("timer").innerHTML = "Time: " + seconds;
