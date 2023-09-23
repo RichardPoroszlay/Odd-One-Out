@@ -133,9 +133,7 @@ def show_next(id):
     if id == solution:
         hc_score += 1
         print(hc_score)
-        return render_template(
-            "hardcore.html", word=db_conn.get_random_record(), hc_score=hc_score
-        )
+        return redirect(url_for("hardcore"))
     else:
         print(hc_score)
         temp_score = hc_score
