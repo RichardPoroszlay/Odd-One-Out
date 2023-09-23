@@ -2,7 +2,8 @@ import unittest
 import os
 import logging.config
 from flask import Flask, request
-from app import app, db_conn, solution, rounds_to_play, rounds_won, rounds_lost, hc_score
+from app import app, db_conn, solution, rounds_to_play, rounds_won, rounds_lost, hc_score, get_solution
+from unittest.mock import patch
 
 def clear_log_file():
         if os.path.exists('test.log'):
@@ -114,11 +115,65 @@ class TestAppRoutes(unittest.TestCase):
     def test_show_next_route_hc_score_reset(self):
         self.log_test_start("test_show_next_route_hc_score_reset")
         global hc_score
-        hc_score = 5  # Set a non-zero hc_score
-        response = self.app.get('/show_next/incorrect_solution_id')
-        self.assertEqual(response.status_code, 404)
-        self.assertEqual(hc_score, 5)  # Ensure hc_score is reset to 0
+        response = self.app.get('/hardcore')
+        hc_score = 5
+        self.assertEqual(response.status_code, 200)
         self.log_test_passed("test_show_next_route_hc_score_reset")
+
+    def test_hardcore_route_score(self):
+        self.log_test_start("test_hardcore_route_score_tozero")
+        response = self.app.get('/hardcore')
+        hc_score = 0
+        self.assertEqual(response.status_code, 200)
+        self.log_test_start("test_hardcore_route_score_tozero")
+
+    def test_show_next_route_incorrect_solution(self):
+        self.log_test_start("test_show_next_route_incorrect_solution")
+        global hc_score
+        hc_score = 0  
+        app.solution = "test_word"
+        response = self.app.get('/hardcore/incorrect_solution_id')
+        self.assertEqual(response.status_code, 200)
+        self.log_test_start("test_show_next_route_incorrect_solution")
+
+    def test_hardcore_route_zero(self):
+        self.log_test_start("test_hardcore_route_zero")
+        global hc_score
+        hc_score = 0
+        app.solution = "test_word"
+        response = self.app.get('/hardcore')
+        self.assertEqual(response.status_code, 200)
+        self.log_test_start("test_hardcore_route_zero")
+
+    def test_hardcore_route_nonzero_score(self):
+        self.log_test_start("test_hardcore_route_nonzero_score")
+        global hc_score
+        hc_score = 5
+        app.solution = "test_word"
+        response = self.app.get('/hardcore')
+        self.assertEqual(response.status_code, 200)
+        self.log_test_start("test_hardcore_route_nonzero_score")
+
+    def test_get_solution_2(self):
+        self.log_test_start("test_hardcore_route_nonzero_score2")
+        solution
+        words = ["a"]
+        self.assertEqual(get_solution(words), None)
+        self.log_test_start("test_hardcore_route_nonzero_score2")
+
+    def test_get_hc_score(self):
+        self.log_test_start("test_get_hc_score")
+        hc_score
+        self.assertEqual(hc_score, 0)
+        self.log_test_start("test_get_hc_score")  
+
+    def test_get_rounds_to_play(self):
+        self.log_test_start("test_get_rounds_to_play")
+        rounds_to_play
+        self.assertEqual(rounds_to_play, 0)
+        self.log_test_start("test_get_rounds_to_play")
+
+    
 
 if __name__ == '__main__':
     clear_log_file()

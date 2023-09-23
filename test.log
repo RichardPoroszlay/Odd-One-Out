@@ -1,6 +1,15 @@
 INFO:root:Starting test: test_game_result_route
 INFO:root:Test passed: test_game_result_route
+INFO:root:Starting test: test_get_hc_score
+INFO:root:Starting test: test_get_hc_score
+INFO:root:Starting test: test_get_rounds_to_play
+INFO:root:Starting test: test_get_rounds_to_play
+INFO:root:Starting test: test_hardcore_route_nonzero_score2
+INFO:root:Starting test: test_hardcore_route_nonzero_score2
 INFO:root:Starting test: test_hardcore_route
+INFO:root:Starting test: test_hardcore_route_nonzero_score
+INFO:root:Starting test: test_hardcore_route_score_tozero
+INFO:root:Starting test: test_hardcore_route_zero
 INFO:root:Starting test: test_input_game_id_route_correct_solution
 INFO:root:Test passed: test_input_game_id_route_correct_solution
 INFO:root:Starting test: test_input_game_id_route_incorrect_solution
@@ -11,6 +20,7 @@ INFO:root:Starting test: test_input_game_route_POST_invalid_rounds
 INFO:root:Test passed: test_input_game_route_POST_invalid_rounds
 INFO:root:Starting test: test_input_game_route_POST_play_rounds
 INFO:root:Starting test: test_input_game_route_POST_valid_rounds
+INFO:root:Test passed: test_input_game_route_POST_valid_rounds
 INFO:root:Starting test: test_input_route
 INFO:root:Test passed: test_input_route
 INFO:root:Starting test: test_show_next_route_correct_solution
@@ -18,6 +28,8 @@ INFO:root:Test passed: test_show_next_route_correct_solution
 INFO:root:Starting test: test_show_next_route_hc_score_reset
 INFO:root:Test passed: test_show_next_route_hc_score_reset
 INFO:root:Starting test: test_show_next_route_incorrect_solution
-INFO:root:Test passed: test_show_next_route_incorrect_solution
+INFO:root:Starting test: test_show_next_route_incorrect_solution
 INFO:root:Starting test: test_store_result_route_correct_solution
+INFO:root:Test passed: test_store_result_route_correct_solution
 INFO:root:Starting test: test_store_result_route_incorrect_solution
+INFO:root:Test passed: test_store_result_route_incorrect_solution
