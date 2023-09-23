@@ -101,8 +101,8 @@ def input_game():
 
 @app.route("/input_game/<id>")
 def store_result(id):
-    global rounds_lost
     global rounds_won
+    global rounds_lost
 
     if id == solution:
         rounds_won += 1
@@ -114,8 +114,14 @@ def store_result(id):
 
 @app.route("/game_result")
 def game_result():
+    global rounds_won
+    global rounds_lost
+    rounds_won_holder = rounds_won
+    rounds_lost_holder = rounds_lost
+    rounds_won = 0
+    rounds_lost = 0
     return render_template(
-        "input_game_result.html", rounds_won=rounds_won, rounds_lost=rounds_lost
+        "input_game_result.html", rounds_won=rounds_won_holder, rounds_lost=rounds_lost_holder
     )
 
 
