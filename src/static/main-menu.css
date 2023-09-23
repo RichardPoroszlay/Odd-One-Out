@@ -22,6 +22,10 @@ html, body {
 }
 
 .contents-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
     background-color: rgb(33, 33, 33) ;
     text-align: center;
     min-height: 90.9%;
