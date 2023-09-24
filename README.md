@@ -28,24 +28,10 @@ Note: you can stop the server in the IDE and in the CLI, it depends where you ru
 
 You can play the game on Windows, on Mac and on Linux as well.
 
-## Displays of the game
+## Insight
 
-This section illustrates how the game looks like and how it works.
-
-### Base Game
-
-Base Game - Win
-
-![Base Game - Win](res/base-game-win.gif)
-
-### Time Race
-
-![Time Race](res/time-race.gif)
+This section gives a little insight how the game works.
 
 ### Input Game
 
 ![Input Game](res/input-game.gif)
-
-### Hardcore
-
-![Hardcore](res/hardcore.gif)
