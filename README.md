@@ -32,19 +32,11 @@ You can play the game on Windows, on Mac and on Linux as well.
 
 This section illustrates how the game looks like and how it works.
 
-### Main Menu
-
-![Main Menu](res/main-menu.gif)
-
 ### Base Game
 
 Base Game - Win
 
 ![Base Game - Win](res/base-game-win.gif)
-
-Base Game - Lose
-
-![Base Game - Lose](res/base-game-lose.gif)
 
 ### Time Race
 
