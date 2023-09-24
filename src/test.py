@@ -270,7 +270,15 @@ class TestAppRoutes(unittest.TestCase):
         self.assertEqual(rounds_to_play, 0)
         self.log_test_start("test_get_rounds_to_play")
 
-    
+    def test_input_game_route_POST_play_rounds_remaining_rounds(self):
+        self.log_test_start("test_input_game_route_POST_play_rounds_remaining_rounds")
+        global rounds_to_play
+        rounds_to_play = 3  # Set some remaining rounds
+        response = self.app.post('/input_game', data={'rounds': '5'})
+        self.assertEqual(response.status_code, 200)
+        self.log_test_passed("test_input_game_route_POST_play_rounds_remaining_rounds")
+
+ 
 
 if __name__ == '__main__':
     clear_log_file()
