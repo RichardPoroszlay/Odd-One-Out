@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd One Out - Input</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='input_game.css')}}">
+</head>
+
+<body>
+    <div class="title-section">
+        <div class="title">
+            Can you find the odd one out?
+        </div>
+    </div>
+
+    <div class="words-section">
+        <a href="/input_game/{{word[1]}}"><button>{{ word[1] }}</button></a>
+        <a href="/input_game/{{word[2]}}"><button>{{ word[2] }}</button></a>
+        <a href="/input_game/{{word[3]}}"><button>{{ word[3] }}</button></a>
+        <a href="/input_game/{{word[4]}}"><button>{{ word[4] }}</button></a>
+    </div>
+</body>
+
+</html>

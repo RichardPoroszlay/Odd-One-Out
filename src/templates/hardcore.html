@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd One Out - Hardcore</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='hardcore.css')}}">
+</head>
+
+<body>
+    <div class="title-section">
+        <div class="title">
+            Can you find the odd one out?
+        </div>
+    </div>
+
+    <div class="contents-section">
+        <a href="/hardcore/{{word[1]}}"><button>{{ word[1] }}</button></a>
+        <a href="/hardcore/{{word[2]}}"><button>{{ word[2] }}</button></a>
+        <a href="/hardcore/{{word[3]}}"><button>{{ word[3] }}</button></a>
+        <a href="/hardcore/{{word[4]}}"><button>{{ word[4] }}</button></a>
+    </div>
+
+</body>
+
+</html>

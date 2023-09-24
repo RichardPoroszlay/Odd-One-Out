@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd One Out - Time Race</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='time-race.css')}}">
+    <script src="{{ url_for('static', filename='timer.js') }}"></script>
+</head>
+<body>
+    <div class="title-section">
+        <div class="title">
+            Can you find the odd one out?
+        </div>
+    </div>
+    <div class="contents-section">
+        <div class="navbar">
+            <div id="score">
+                Score: {{ tr_score }}
+            </div>
+            <div id="timer">
+                Time:
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="/time-race/{{word[1]}}"><button>{{ word[1] }}</button></a>
+            <a href="/time-race/{{word[2]}}"><button>{{ word[2] }}</button></a>
+            <a href="/time-race/{{word[3]}}"><button>{{ word[3] }}</button></a>
+            <a href="/time-race/{{word[4]}}"><button>{{ word[4] }}</button></a>
+        </div>
+    </div>
+</body>
+</html>

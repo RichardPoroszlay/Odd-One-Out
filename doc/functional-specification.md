@@ -15,12 +15,26 @@ The fourth game mode would be a hardcore game mode.
 
 ## Current state
 
+The first and most important purpose of our application is entertainment and spending valuable time. The Odd One Out games are intuitive and
+challenging. As scientific publications state, the game helps young children to improve the way of their thinking.
+The game is also good for ability testing such as linguistic and analytic skills measuring.
+
 The primary function of the program is entertainment. It offers a diverse range of game modes
 that assist young individuals in experiencing the "odd-one-out" phenomenon. The fundamental
 mechanics of the game are designed to enhance logical reasoning skills. With its variety,
 it provides an exciting and engaging experience that keeps players thoroughly entertained and
 less likely to grow bored. This diversity and engagement factor contribute significantly to
 the program's appeal and effectiveness in delivering enjoyable gameplay experiences.
+
+## Developers purpose
+Our purpose is to create an open source, free application which helps the education of the young generation.
+We also want the game to be available in digital format.
+
+We are planning to create four game modes:
+- Base game
+- Time race
+- Input based
+- Hardcore
 
 ## Functional specification of requirement list
 
@@ -36,6 +50,10 @@ the program's appeal and effectiveness in delivering enjoyable gameplay experien
 ## Use cases
 
 The software does not handle user profiles. There is no authentication, and there are no user roles. As soon as the program starts, the user appears as a player. In this capacity, they have access to all of the program's game modes. They have unlimited attempts, and they can restart the game as many times as they want. However, there are no admin privileges, and users cannot modify the software's properties.
+
+### Maintenance
+
+The continuous operation and maintenance of the application include addressing program errors, making modifications due to changes in internal requirements, and addressing program or file modification needs arising from changes in environmental conditions. Over time, new categories must be added to the game to maintain interest.
 
 ## Current model of business processes
 
@@ -68,11 +86,41 @@ In the Hardcore mode, the user will receive tasks one after another consecutivel
 
 ![menu plan](../res/main-menu.png)
 
+## Easy to read description
+
+The game is built using Python and Flask for the backend, and HTML and CSS for the frontend. It offers multiple game modes to cater to different preferences and age groups.
+Players must find the odd word in a set of words based on the chosen game mode, and each mode has a unique objective.
+There are no user profiles or authentication, and users can freely play and restart the game.
+The software's maintenance involves fixing errors, adapting to changing requirements, and adding new categories to keep it engaging.
+In today's digital age, such games serve as a source of entertainment, a tool for mental exercise, and a way to connect with others.
+The project's main menu allows users to select their preferred game mode, and each mode has its own rules and challenges.
+Overall, this Odd One Out game provides fun and mental stimulation for a wide range of players.
+
 ## Standard scenario
 
 - During the runtime of the software, a user appears, the player.
 - At the start, the player finds themselves in the menu, where they can choose between different game modes. (The general gameplay descriptions of the various game modes can be found under the "Functional specification of requirement list" section.)
 - After a session, the player can choose whether they'd like to start a new round or exit the current screen.
+
+## System License
+It's an open source project, no licence is used.
+
+## Legal requirements that apply to the system
+Copyright and Intellectual Property:
+- Ensure that the game's content, including graphics, sound, and text, does not infringe upon the copyrights or intellectual property rights of others.
+- If you use any third-party assets or open-source libraries, be sure to adhere to their licensing terms and give proper attribution when required.
+  
+Accessibility:
+- Ensure that your game is accessible to players with disabilities by adhering to accessibility guidelines and laws
+  
+Trademarks and Branding:
+- Be cautious about using trademarks, logos, or branding elements of other companies or products without proper authorization, as this can lead to legal issues.
+  
+Contractual Agreements:
+- If you work with collaborators, artists, or developers, create clear contracts outlining ownership, royalties, and other rights and responsibilities to prevent disputes down the line.
+
+Fair Competition:
+- Avoid unfair competition practices, such as false advertising, that could lead to legal action from competitors.
 
 ## Dictionary of terms
 

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+}
+
+.title-section {
+    background-color: #e98604;
+    padding: none 10px 10px 10px;
+    letter-spacing: 1px;
+}
+
+.title {
+    font-size: 75px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.question{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
+    height: 100vh; 
+    color: white;
+}
+
+form label {
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+}
+
+input[type="number"] {
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.question button{
+    background-color: #e98604;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 25px;
+    min-height: 40px; 
+    min-width: 100px;
+    margin: 40px;
+    transition: color 0.5s, background-color 0.5s, box-shadow 0.2s;
+}
+
+button:hover {
+    background: radial-gradient(53.2% 178.72% at 27.1% 182.75%,#e98604 6.65%,#fceb05 100%);
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #fceb05;
+    cursor: pointer;
+}

@@ -1,17 +1,26 @@
-<!-- Which one is the odd? -->
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="contents-section">
-    <div class="button">
-        <button>{{ word[1] }}</button>
-        
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd One Out - Base</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='base.css')}}">
+</head>
+
+<body>
+    <div class="title-section">
+        <div class="title">
+            Can you find the odd one out?
+        </div>
     </div>
-    <div class="button">
-        <button>{{ word[2] }}</button>
+
+    <div class="contents-section">
+        <a href="/base/{{word[1]}}"><button>{{ word[1] }}</button></a>
+        <a href="/base/{{word[2]}}"><button>{{ word[2] }}</button></a>
+        <a href="/base/{{word[3]}}"><button>{{ word[3] }}</button></a>
+        <a href="/base/{{word[4]}}"><button>{{ word[4] }}</button></a>
     </div>
-    <div class="button">
-        <button>{{ word[3] }}</button>
-    </div>
-    <div class="button">
-        <button>{{ word[4] }}</button>
-    </div>
-</div>
+</body>
+
+</html>

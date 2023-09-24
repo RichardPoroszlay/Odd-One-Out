@@ -13,7 +13,7 @@ class DbConnections:
         data = cursor.fetchall()
         return data
 
-    def get_random_word(self):
+    def get_random_record(self):
         cursor = self.mysql.connection.cursor()
         cursor.execute('SELECT * FROM `Oddoneout`')
         data = cursor.fetchall()
