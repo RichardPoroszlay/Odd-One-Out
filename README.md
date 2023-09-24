@@ -34,26 +34,26 @@ This section illustrates how the game looks like and how it works.
 
 ### Main Menu
 
-![](res/main-menu.mp4)
+![Main Menu](res/main-menu.gif)
 
 ### Base Game
 
 Base Game - Win
 
-![](res/base-game-win.mp4)
+![Base Game - Win](res/base-game-win.gif)
 
 Base Game - Lose
 
-![](res/base-game-lose.mp4)
+![Base Game - Lose](res/base-game-lose.gif)
 
 ### Time Race
 
-![](res/time-race.mp4)
+![Time Race](res/time-race.gif)
 
 ### Input Game
 
-![](res/input-game.mp4)
+![Input Game](res/input-game.gif)
 
 ### Hardcore
 
-![](res/hardcore.mp4)
+![Hardcore](res/hardcore.gif)
