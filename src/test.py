@@ -278,7 +278,56 @@ class TestAppRoutes(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.log_test_passed("test_input_game_route_POST_play_rounds_remaining_rounds")
 
- 
+    def test_input_game_route_POST_play_rounds_exhausted_rounds(self):
+        self.log_test_start("test_input_game_route_POST_play_rounds_exhausted_rounds")
+        global rounds_to_play
+        rounds_to_play = 1  # Set remaining rounds to 1
+        response = self.app.post('/input_game', data={'rounds': '5'})
+        self.assertEqual(response.status_code, 200)
+        response = self.app.post('/input_game', data={'rounds': '5'})  # Try to play more rounds
+        self.assertEqual(response.status_code, 200)  # Expect to stay on the same page
+        self.log_test_passed("test_input_game_route_POST_play_rounds_exhausted_rounds")
+
+    def test_store_result_route_correct_solution_increase_rounds_won(self):
+        self.log_test_start("test_store_result_route_correct_solution_increase_rounds_won")
+        global rounds_won
+        global rounds_lost
+        rounds_won = 1
+        rounds_lost = 0
+        response = self.app.get(f'/input_game/{solution}')
+        self.assertEqual(response.status_code, 302)
+        self.assertEqual(rounds_won, 1)
+        self.assertEqual(rounds_lost, 0)
+        self.log_test_passed("test_store_result_route_correct_solution_increase_rounds_won")
+
+    def test_store_result_route_incorrect_solution_increase_rounds_lost(self):
+        self.log_test_start("test_store_result_route_incorrect_solution_increase_rounds_lost")
+        global rounds_won
+        global rounds_lost
+        rounds_won = 0
+        rounds_lost = 1
+        response = self.app.get('/input_game/incorrect_solution_id')
+        self.assertEqual(response.status_code, 302)
+        self.assertEqual(rounds_won, 0)
+        self.assertEqual(rounds_lost, 1)
+        self.log_test_passed("test_store_result_route_incorrect_solution_increase_rounds_lost")
+
+
+    def test_hardcore_route_correct_solution_increase_hc_score(self):
+        self.log_test_start("test_hardcore_route_correct_solution_increase_hc_score")
+        global hc_score
+        hc_score = 0
+        response = self.app.get(f'/hardcore/{solution}')
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(hc_score, 0)
+        self.log_test_passed("test_hardcore_route_correct_solution_increase_hc_score")
+
+    def test_get_hc_score_nonzero_hc_score(self):
+        self.log_test_start("test_get_hc_score_nonzero_hc_score")
+        global hc_score
+        hc_score = 5
+        self.assertEqual(hc_score, 5)
+        self.log_test_passed("test_get_hc_score_nonzero_hc_score")
 
 if __name__ == '__main__':
     clear_log_file()

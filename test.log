@@ -4,6 +4,8 @@ INFO:root:Starting test: test_game_result_route
 INFO:root:Test passed: test_game_result_route
 INFO:root:Starting test: test_get_hc_score
 INFO:root:Starting test: test_get_hc_score
+INFO:root:Starting test: test_get_hc_score_nonzero_hc_score
+INFO:root:Test passed: test_get_hc_score_nonzero_hc_score
 INFO:root:Starting test: test_get_rounds_to_play
 INFO:root:Starting test: test_get_rounds_to_play
 INFO:root:Starting test: test_get_solution
@@ -12,6 +14,8 @@ INFO:root:Starting test: test_hardcore_route_nonzero_score2
 INFO:root:Starting test: test_hardcore_route_nonzero_score2
 INFO:root:Starting test: test_hardcore_route
 INFO:root:Test passed: test_hardcore_route
+INFO:root:Starting test: test_hardcore_route_correct_solution_increase_hc_score
+INFO:root:Test passed: test_hardcore_route_correct_solution_increase_hc_score
 INFO:root:Starting test: test_hardcore_route_nonzero_score
 INFO:root:Starting test: test_hardcore_route_nonzero_score
 INFO:root:Starting test: test_hardcore_route_score_tozero
@@ -30,6 +34,8 @@ INFO:root:Starting test: test_input_game_route_POST_invalid_rounds
 INFO:root:Test passed: test_input_game_route_POST_invalid_rounds
 INFO:root:Starting test: test_input_game_route_POST_play_rounds
 INFO:root:Test passed: test_input_game_route_POST_play_rounds
+INFO:root:Starting test: test_input_game_route_POST_play_rounds_exhausted_rounds
+INFO:root:Test passed: test_input_game_route_POST_play_rounds_exhausted_rounds
 INFO:root:Starting test: test_input_game_route_POST_play_rounds_remaining_rounds
 INFO:root:Test passed: test_input_game_route_POST_play_rounds_remaining_rounds
 INFO:root:Starting test: test_input_game_route_POST_valid_rounds
@@ -62,8 +68,12 @@ INFO:root:Starting test: test_show_word_route_incorrect_solution
 INFO:root:Test passed: test_show_word_route_incorrect_solution
 INFO:root:Starting test: test_store_result_route_correct_solution
 INFO:root:Test passed: test_store_result_route_correct_solution
+INFO:root:Starting test: test_store_result_route_correct_solution_increase_rounds_won
+INFO:root:Test passed: test_store_result_route_correct_solution_increase_rounds_won
 INFO:root:Starting test: test_store_result_route_incorrect_solution
 INFO:root:Test passed: test_store_result_route_incorrect_solution
+INFO:root:Starting test: test_store_result_route_incorrect_solution_increase_rounds_lost
+INFO:root:Test passed: test_store_result_route_incorrect_solution_increase_rounds_lost
 INFO:root:Starting test: test_time_race_route
 INFO:root:Test passed: test_time_race_route
 INFO:root:Starting test: test_time_race_score
