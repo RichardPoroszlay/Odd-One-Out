@@ -29,73 +29,101 @@ class TestAppRoutes(unittest.TestCase):
         logging.error(f"Test failed: {test_name}")
 
     def test_index_route(self):
+        self.log_test_start("test_index_route")
         response = self.app.get('/')
         self.assertEqual(response.status_code, 200)
+        self.log_test_passed("test_index_route")
 
     def test_base_route(self):
+        self.log_test_start("test_base_route")
         response = self.app.get('/base')
         self.assertEqual(response.status_code, 200)
+        self.log_test_passed("test_base_route")
 
     def test_show_word_route_correct_solution(self):
+        self.log_test_start("test_show_word_route_correct_solution")
         response = self.app.get('/base/your_solution_id')
         self.assertEqual(response.status_code, 200)
+        self.log_test_passed("test_show_word_route_correct_solution")
 
     def test_show_word_route_incorrect_solution(self):
+        self.log_test_start("test_show_word_route_incorrect_solution")
         response = self.app.get('/base/incorrect_solution_id')
         self.assertEqual(response.status_code, 200)
+        self.log_test_passed("test_show_word_route_incorrect_solution")
 
     def test_time_race_route(self):
+        self.log_test_start("test_time_race_route")
         response = self.app.get('/time-race')
         self.assertEqual(response.status_code, 200)
+        self.log_test_passed("test_time_race_route")
 
     def test_show_next_tr_route_correct_solution(self):
+        self.log_test_start("test_show_next_tr_route_correct_solution")
         response = self.app.get('/time-race/your_solution_id')
         self.assertEqual(response.status_code, 302)
+        self.log_test_passed("test_show_next_tr_route_correct_solution")
 
     def test_show_next_tr_route_incorrect_solution(self):
+        self.log_test_start("test_show_next_tr_route_incorrect_solution")
         response = self.app.get('/time-race/incorrect_solution_id')
         self.assertEqual(response.status_code, 302)
+        self.log_test_passed("test_show_next_tr_route_incorrect_solution")
 
     def test_show_tr_lost_route(self):
+        self.log_test_start("test_show_tr_lost_route")
         response = self.app.get('/tr-timeout')
         self.assertEqual(response.status_code, 200)
+        self.log_test_passed("test_show_tr_lost_route")
 
     def test_get_solution(self):
+        self.log_test_start("test_get_solution")
         words = ["a", "b", "c"]
         get_solution(words)
         self.assertEqual(solution, None)
+        self.log_test_passed("test_get_solution")
 
     def test_time_race_score(self):
+        self.log_test_start("test_time_race_score")
         response = self.app.get('/time-race')
         self.assertEqual(tr_score, 5)
+        self.log_test_passed("test_time_race_score")
 
     def test_show_next_tr_route_correct_solution_score_increase(self):
+        self.log_test_start("test_show_next_tr_route_correct_solution_score_increase")
         global tr_score
         tr_score = 0
         response = self.app.get('/time-race/your_solution_id')
         self.assertEqual(response.status_code, 302)
         self.assertEqual(tr_score, 0)
+        self.log_test_passed("test_show_next_tr_route_correct_solution_score_increase")
 
     def test_show_next_tr_route_incorrect_solution_score_no_increase(self):
+        self.log_test_start("test_show_next_tr_route_incorrect_solution_score_no_increase")
         global tr_score
         tr_score = 0
         response = self.app.get('/time-race/incorrect_solution_id')
         self.assertEqual(response.status_code, 302)
         self.assertEqual(tr_score, 0)
+        self.log_test_passed("test_show_next_tr_route_incorrect_solution_score_no_increase")
 
     def test_show_tr_lost_route_score_reset(self):
+        self.log_test_start("test_show_tr_lost_route_score_reset")
         global tr_score
         tr_score = 5
         response = self.app.get('/tr-timeout')
         self.assertEqual(response.status_code, 200)
         self.assertEqual(tr_score, 5)
+        self.log_test_passed("test_show_tr_lost_route_score_reset")
 
     def test_show_tr_lost_route_score_nonzero(self):
+        self.log_test_start("test_show_tr_lost_route_score_nonzero")
         global tr_score
         tr_score = 5
         response = self.app.get('/tr-timeout')
         self.assertEqual(response.status_code, 200)
         self.assertEqual(tr_score, 5)
+        self.log_test_passed("test_show_tr_lost_route_score_nonzero")
 
     def test_input_route(self):
         self.log_test_start("test_input_route")
