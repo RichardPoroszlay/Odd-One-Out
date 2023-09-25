@@ -51,6 +51,7 @@ html, body {
 
 .contents-section .buttons {
     display: flex;
+    justify-content: center;
 }
 
 .contents-section .buttons button {
@@ -60,7 +61,7 @@ html, body {
     border: none;
     border-radius: 25px;
     min-height: 80px; 
-    min-width: 400px;
+    min-width: 200px;
     margin: 40px;
     transition: color 0.5s, background-color 0.5s, box-shadow 0.2s;   
 }
