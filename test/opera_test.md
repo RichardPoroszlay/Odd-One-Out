@@ -1,6 +1,6 @@
 ## Opera GX
 
-Tesztelő: Sidlóczki Balázs Ádám
+Tester: Sidlóczki Balázs Ádám
 
 | Test Case | Step | Description | Status | Expected Result | Actual |
 |------------| ----- | ------ | ------- | ------------- | ------ |
